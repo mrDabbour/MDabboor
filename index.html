@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mohammed Dabboor</title>
+  </head>
+  <body>
+    <header>
+      <br />
+      <br />
+      <img src="public/mohammed-dabboor.jpg" alt="mohammed dabboor" />
+      <h3>Mohammed Dabboor</h3>
+      <h3>back-end web developer</h3>
+    </header>
+    <main>
+      <h1>Welcome to Mohammed Dabboor Page</h1>
+      <h1>Skills & Experience</h1>
+      <ul id="skills-list">
+        <li>
+          <button class="skill-button" onclick="showDescription('Laravel')">
+            Laravel
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('Node.js')">
+            Node.js
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('Express.js')">
+            Express.js
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('JavaScript')">
+            JavaScript (ES6+)
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('React.js')">
+            React.js
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('Vue.js')">
+            Vue.js
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('MySQL')">
+            MySQL
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('MongoDB')">
+            MongoDB
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('PostgreSQL')">
+            PostgreSQL
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('HTML')">
+            HTML
+          </button>
+        </li>
+        <li>
+          <button class="skill-button" onclick="showDescription('CSS')">
+           CSS
+          </button>
+        </li>
+      </ul>
+      <p id="skill-description">Click on a skill to see its description.</p>
+
+      <script>
+        function showDescription(skill) {
+          var descriptions = {
+            Laravel: "A PHP framework for building scalable web applications.",
+            "Node.js":
+              "A JavaScript runtime environment for server-side development.",
+            "Express.js":
+              "A minimal and flexible Node.js web application framework.",
+            JavaScript:
+              "The core language for web development, including modern features.",
+            "React.js": "A JavaScript library for building user interfaces.",
+            "Vue.js":
+              "A progressive JavaScript framework for building interactive web interfaces.",
+            MySQL: "A popular relational database management system.",
+            MongoDB:
+              "A NoSQL database program, using JSON-like documents with optional schemas.",
+            PostgreSQL:
+              "A powerful, open-source object-relational database system.",
+            HTML: "HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.",
+            CSS: "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.",
+            // Add descriptions for other skills here
+          };
+
+          var description = descriptions[skill];
+          document.getElementById("skill-description").innerText = description;
+        }
+      </script>
+      <hr />
+      <p>
+        Feel free to contact me for any web development projects or
+        collaborations!
+      </p>
+      <i class="fa-brands fa-facebook"></i>
+      <a href="https://www.facebook.com/MohammedDabour2001" target="_blank"
+        >facebook</a
+      >
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/mohamd-dabour" target="_blank"
+        >Linkedin</a
+      >
+      <i class="fa-brands fa-square-upwork"></i>
+      <a
+        href="https://www.upwork.com/freelancers/~0142baaaf254ce2fd9"
+        target="_blank"
+        >Upwork</a
+      >
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/mrDabbour" target="_blank">Github</a>
+    </main>
+  </body>
+</html>

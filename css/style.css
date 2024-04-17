@@ -1,0 +1,103 @@
+/* Set up Sedan font */
+@font-face {
+    font-family: 'Sedan';
+    src: url('../path/to/Sedan-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Apply Sedan font to body */
+body {
+    background-image: url('../public/background-image.avif');
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 14px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-position: center;
+    font-size: 24px;
+    font-family: 'Sedan', Arial, sans-serif;
+    /* Use Sedan font */
+}
+
+/* Style for headers */
+header {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 10% 30%;
+}
+
+img {
+    border-radius: 50%;
+    width: 60%;
+}
+
+/* Style for main content */
+main {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* Style for icons */
+i {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Style for links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for unordered list */
+ul {
+    list-style-type: none;
+    padding: 3%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for list items */
+.skill-button {
+    background-color: #254547;
+    /* Dark blue-green color */
+    border: 2px solid #254547;
+    /* Border same as background color */
+    color: white;
+    padding: 15px 30px;
+    /* Padding for better button size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+.skill-button:hover {
+    background-color: transparent;
+    /* Transparent background on hover */
+    color: #254547;
+    /* Dark blue-green color on hover */
+    border-color: #254547;
+    /* Dark blue-green border on hover */
+}
